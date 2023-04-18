@@ -8,6 +8,16 @@
 }
 
 body {
+  min-height: 100vh;
   position: relative;
   font-size: 14px;
+  background-color: #002e6d;
+  color: #fff;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

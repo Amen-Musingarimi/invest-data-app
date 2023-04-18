@@ -1,9 +1,16 @@
+import CompaniesList from './components/companiesList';
+import NavBar from './components/NavBar';
+import Search from './components/Search';
 import './App.css';
+import CompanyProfle from './components/CompanyProfile';
 
 function App() {
   return (
-    <div>
-      <h2>Amen</h2>
+    <div className="main-container">
+      <NavBar />
+      <Search />
+      <CompanyProfle />
+      <CompaniesList />
     </div>
   );
 }
