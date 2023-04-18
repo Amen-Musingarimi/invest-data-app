@@ -1,21 +1,28 @@
+import { useNavigate, Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from 'react-icons/io';
 import { BsFillMicFill } from 'react-icons/bs';
 import { AiOutlineSetting } from 'react-icons/ai';
 import './styles/NavBar.css';
 
 const NavBar = () => {
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate('/');
+  };
+
   return (
     <nav className="nav-bar">
-      <a href="#" className="nav-link">
+      <Link to="/" onClick={handleBackClick} className="nav-link">
         <IoMdArrowRoundBack />
-      </a>
+      </Link>
       <div className="links-container">
-        <a href="#" className="nav-link">
+        <Link className="nav-link">
           <BsFillMicFill />
-        </a>
-        <a href="#" className="nav-link">
+        </Link>
+        <Link className="nav-link">
           <AiOutlineSetting />
-        </a>
+        </Link>
       </div>
     </nav>
   );

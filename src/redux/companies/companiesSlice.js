@@ -23,7 +23,6 @@ export const getCompanyProfileAsync = createAsyncThunk(
     if (response.ok) {
       const data = await response.json();
       const company = data;
-      console.log(company);
       return company;
     }
     return null;

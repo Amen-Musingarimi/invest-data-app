@@ -9,7 +9,7 @@ const CompanyProfile = () => {
   }
 
   return (
-    <table border="1">
+    <table>
       <thead>
         <tr>
           <th>Name:</th>
@@ -47,3 +47,53 @@ const CompanyProfile = () => {
 };
 
 export default CompanyProfile;
+
+// import React from 'react';
+// import { useSelector } from 'react-redux';
+// import { useParams } from 'react-router-dom';
+
+// const CompanyProfile = () => {
+//   const { companyName } = useParams();
+
+//   const companyProfile = useSelector((state) => state.company.companyProfiles);
+//   console.log(companyProfile);
+
+//   const company = companyProfile.find(
+//     (company) => company.name === companyName
+//   );
+
+//   return (
+//     <table border="1">
+//       <thead>
+//         <tr>
+//           <th>Name:</th>
+//           <th>Details</th>
+//         </tr>
+//       </thead>
+//       <tbody>
+//         <tr>
+//           <td>Company Name</td>
+//           <td>{company.name}</td>
+//         </tr>
+//         <tr>
+//           <td>Company Profit</td>
+//           <td>{company.profit}</td>
+//         </tr>
+//         <tr>
+//           <td>Company Ranking</td>
+//           <td>{company.rank}</td>
+//         </tr>
+//         <tr>
+//           <td>Company Revenue</td>
+//           <td>{company.revenue}</td>
+//         </tr>
+//         <tr>
+//           <td>Financial Year</td>
+//           <td>{company.financialYear}</td>
+//         </tr>
+//       </tbody>
+//     </table>
+//   );
+// };
+
+// export default CompanyProfile;
