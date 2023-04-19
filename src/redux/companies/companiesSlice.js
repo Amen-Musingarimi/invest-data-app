@@ -11,14 +11,14 @@ export const getCompaniesAsync = createAsyncThunk(
       return companies;
     }
     return null;
-  }
+  },
 );
 
 export const getCompanyProfileAsync = createAsyncThunk(
   'company/getCompanyProfile',
   async (companyName) => {
     const response = await fetch(
-      `https://588fc30f7458d612002df0d2.mockapi.io/api/v1/companies?filter=${companyName}`
+      `https://588fc30f7458d612002df0d2.mockapi.io/api/v1/companies?filter=${companyName}`,
     );
     if (response.ok) {
       const data = await response.json();
@@ -26,7 +26,7 @@ export const getCompanyProfileAsync = createAsyncThunk(
       return company;
     }
     return null;
-  }
+  },
 );
 
 const companiesSlice = createSlice({

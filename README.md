@@ -1,12 +1,11 @@
-<!-- TABLE OF CONTENTS -->
-
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Bookstore\] ](#-bookstore-)
+- [📖 \[Invest\_Data\_App\] ](#-invest_data_app-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -23,9 +22,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Bookstore] <a name="about-project"></a>
+# 📖 [Invest_Data_App] <a name="about-project"></a>
 
-**[Bookstore]** This is a website that displays the list of books that we can update by adding a new book or remove a selected book. Built with React and Redux
+**[Invest_Data_App]** This is a mobile web application that renders on its homepage the list of top 100 US companies in terms of profit made in 2009. And you can search any company by its name. The configuration is offered in the modal feature. Each company can be clicked and we can see its profile, for example, its revenue, profit and ranking, etc.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -49,12 +48,21 @@
 
 ### Key Features <a name="key-features"></a>
 
-- **[list_of_books]**
-- **[add-book]**
-- **[delete-book]**
-- **[edit-book-details]**
-- **[update-progress]**
+- **[list_of_companies]**
+- **[search]**
+- **[routes]**
+- **[company_profile]**
+- **[nav_bar]**
+- **[back_button]**
 - **[api]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://space-travellers-hub-325d.onrender.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -73,7 +81,7 @@ Node js
 ```
 
 ```sh
-sudo yum install nodejs
+sudo yarn install nodejs
 ```
 
 ### Setup
@@ -81,7 +89,7 @@ sudo yum install nodejs
 Clone this repository to your desired folder:
 
 ```sh
-  git clone https://github.com/Amen-Musingarimi/bookstore.git
+  git clone  https://github.com/Amen-Musingarimi/invest-data-app
 ```
 
 ### Install
@@ -91,7 +99,7 @@ Install this project with:
 Example command:
 
 ```sh
-  cd bookstore
+  cd invest-data-app
   npm install
   npm run build
 ```
@@ -138,7 +146,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[category-filter]**
+- [ ] **[database]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +156,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Amen-Musingarimi/bookstore/issues).
+Feel free to check the [issues page](https://github.com/Amen-Musingarimi/invest-data-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -164,7 +172,7 @@ If you like this project then don't forget to give a star ⭐ on this repository
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank [Zeplin](https://app.zeplin.io/login), for the original [design and inspiring my codebase](https://pedantic-beaver-cb923b.netlify.app/#/)
+I would like to thank [Microverse](https://www.microverse.org/), for the original [design guidelines](<https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)>)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

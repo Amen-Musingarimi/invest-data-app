@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { getCompanyProfileAsync } from '../redux/companies/companiesSlice';
-import { clearCompanyProfile } from '../redux/companies/companiesSlice';
-import image from './assets/background.jpg';
+import {
+  getCompanyProfileAsync,
+  clearCompanyProfile,
+} from '../redux/companies/companiesSlice';
 import './styles/Search.css';
 
 const Search = () => {
@@ -67,7 +68,10 @@ const Search = () => {
                 handleClick();
               }}
             >
-              <span className="company-symbol">${company.profit}</span>
+              <span className="company-symbol">
+                $
+                {company.profit}
+              </span>
               <span className="company-name">{company.name}</span>
             </Link>
           ))}

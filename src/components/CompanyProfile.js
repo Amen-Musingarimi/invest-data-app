@@ -28,11 +28,17 @@ const CompanyProfile = () => {
           </div>
           <div className="companies-profile-detail">
             <h3>Revenue:</h3>
-            <h3>${company.revenue}</h3>
+            <h3>
+              $
+              {company.revenue}
+            </h3>
           </div>
           <div className="companies-profile-detail">
             <h3>Profit:</h3>
-            <h3>${company.profit}</h3>
+            <h3>
+              $
+              {company.profit}
+            </h3>
           </div>
         </div>
       ))}

@@ -21,10 +21,10 @@ const NavBar = () => {
         <IoMdArrowRoundBack />
       </Link>
       <div className="links-container">
-        <Link className="nav-link">
+        <Link to="/" className="nav-link">
           <BsFillMicFill />
         </Link>
-        <Link className="nav-link">
+        <Link to="/" className="nav-link">
           <AiOutlineSetting />
         </Link>
       </div>
