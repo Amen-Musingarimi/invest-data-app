@@ -35,7 +35,11 @@ const companiesSlice = createSlice({
     companies: [],
     companyProfiles: [],
   },
-  reducers: {},
+  reducers: {
+    clearCompanyProfile: (state) => {
+      state.companyProfiles = [];
+    },
+  },
 
   extraReducers: (builder) => {
     builder.addCase(getCompaniesAsync.fulfilled, (state, action) => {
@@ -51,5 +55,7 @@ const companiesSlice = createSlice({
     });
   },
 });
+
+export const { clearCompanyProfile } = companiesSlice.actions;
 
 export default companiesSlice.reducer;

@@ -1,0 +1,27 @@
+.companies-profile-container {
+  width: 30%;
+  border: 0.5px solid #6f90b0;
+  margin-bottom: 40px;
+}
+
+.companies-profile-details {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.companies-profile-heading {
+  text-align: center;
+  padding: 20px 5px;
+}
+
+.companies-profile-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.companies-profile-detail:nth-child(even) {
+  background-color: #6495ed;
+}

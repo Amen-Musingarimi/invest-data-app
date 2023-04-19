@@ -4,9 +4,19 @@
   width: 30%;
 }
 
-.stock-image {
-  height: 350px;
-  object-fit: cover;
+.heads-up-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0d47a1;
+  background-image: url('../assets/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
 }
 
 .search-input {
@@ -35,7 +45,6 @@
 .search-results-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 10px;
 }
 
 .search-result-company-link {
@@ -55,4 +64,9 @@
 
 .search-result-company-link:hover {
   background-color: #7393b3;
+}
+
+.error-message {
+  color: red;
+  padding: 10px 0;
 }
