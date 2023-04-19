@@ -62,7 +62,9 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://space-travellers-hub-325d.onrender.com/)
+- [Live Demo Link](https://investment-data-app.onrender.com/)
+
+- [Live Video Demo](https://www.loom.com/share/8bed75e009284673a2b7a3b791bb584b)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

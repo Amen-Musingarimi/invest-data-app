@@ -6,7 +6,7 @@ const CompanyProfile = () => {
   const companyProfiles = useSelector((state) => state.company.companyProfiles);
 
   if (!companyProfiles || companyProfiles.length === 0) {
-    return <div>No company profile data available.</div>;
+    return <div>Loading...</div>;
   }
 
   return (
