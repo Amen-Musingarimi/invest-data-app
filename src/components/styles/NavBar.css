@@ -1,0 +1,20 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  background-color: #0d47a1;
+  padding: 20px 30px;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 16px;
+}
+
+.links-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
