@@ -1,5 +1,5 @@
 .companies-profile-container {
-  width: 30%;
+  width: 100%;
   border: 0.5px solid #6f90b0;
   margin-bottom: 40px;
 }
@@ -24,4 +24,44 @@
 
 .companies-profile-detail:nth-child(even) {
   background-color: #6495ed;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* ----------------------TABLET STYLING--------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .companies-profile-container {
+    margin-bottom: 30px;
+  }
+
+  .companies-profile-heading {
+    font-size: 22px;
+  }
+
+  .companies-profile-detail {
+    padding: 20px;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+/* ----------------------DESKTOP STYLING-------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+  .companies-profile-container {
+    margin-bottom: 40px;
+  }
+
+  .companies-profile-heading {
+    font-size: 24px;
+  }
+
+  .companies-profile-detail {
+    padding: 30px;
+  }
 }

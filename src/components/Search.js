@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { BiRightArrowAlt } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -72,7 +73,11 @@ const Search = () => {
                 $
                 {company.profit}
               </span>
-              <span className="company-name">{company.name}</span>
+              <span className="company-name">
+                {company.name}
+                {' '}
+                <BiRightArrowAlt />
+              </span>
             </Link>
           ))}
         </div>
