@@ -18,7 +18,7 @@ const CompaniesList = () => {
         <CompanyButton
           key={company.id}
           name={company.name}
-          profit={company.profit}
+          rank={company.rank}
         />
       ))}
     </div>

@@ -1,9 +1,10 @@
 .companies-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 30%;
+  width: 100%;
   list-style: none;
   background-color: #add8e6;
+  margin-bottom: 20px;
 }
 
 .list-item {
@@ -11,13 +12,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
   border: 0.5px solid #d3d3d3;
   width: 100%;
   height: 150px;
 }
 
 .company-name {
+  display: flex;
+  align-items: center;
   text-align: center;
   font-weight: 500;
 }
@@ -44,4 +47,70 @@
 
 .company-symbol {
   font-size: 12px;
+}
+
+/* -------------------------------------------------------------------- */
+
+/* ----------------------TABLET STYLING--------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .companies-list {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .list-item:nth-child(even) {
+    background-color: #6495ed;
+  }
+
+  .list-item:nth-child(odd) {
+    background: #0d47a1;
+  }
+
+  .company-link:hover {
+    background-color: #7393b3;
+  }
+
+  .company-name {
+    font-size: 14px;
+  }
+
+  .company-symbol {
+    font-size: 12px;
+  }
+}
+
+/* -------------------------------------------------------------------- */
+
+/* ----------------------DESKTOP STYLING-------------------------------- */
+
+/* ---------------------------------------------------------------------- */
+
+@media only screen and (min-width: 1024px) {
+  .companies-list {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 40px;
+  }
+
+  .list-item:nth-child(even) {
+    background-color: #6495ed;
+  }
+
+  .list-item:nth-child(odd) {
+    background: #0d47a1;
+  }
+
+  .company-link:hover {
+    background-color: #7393b3;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  .company-symbol {
+    font-size: 14px;
+  }
 }
